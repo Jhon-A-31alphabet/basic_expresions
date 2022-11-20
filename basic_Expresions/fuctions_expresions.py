@@ -59,12 +59,16 @@ def match_A_Z(text :str)->str: #its going to search  at the begnning of the stri
     return r
 
 def match_a_z(text :str) ->str:
-    p = re.findall("\D[a-z]",text)
-    return p
+    try:
+        p = re.findall("\D[a-z]",text)
+        return p
+    except:
+        ValueError
+    finally:
+        pass
 
 
     
-         
 
 
 
