@@ -1,6 +1,6 @@
 import re
 import random
-import array
+
 
 def search_ontex(a,word)->str:
     p=re.search(a,word)
@@ -9,9 +9,7 @@ def search_ontex(a,word)->str:
 ### those functions are equivalent as findall
 
 def substring(val,val1)->None:
-
     return re.findall(val,val1)
-
 def find_substring(fuction,val,val1):
     return fuction(val,val1)
 
@@ -55,12 +53,17 @@ def select_element_list(a :str) ->str: #select random elemente in list.
     finally:
         pass
 
+def match_A_Z(text :str)->str: #its going to search  at the begnning of the string
+    p = re.compile("[A-Z]")
+    r=p.match(text)
+    return r
 
-
+def match_a_z(text :str) ->str:
+    p = re.findall("\D[a-z]",text)
+    return p
 
 
     
-
          
 
 
