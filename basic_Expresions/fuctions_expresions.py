@@ -8,10 +8,10 @@ def search_on_tex(a,word)->str:
 
 ### those functions are equivalent as findall
 
-def substring(val,val1)->None:
+def substring(val:str,val1:str)->str:
     return re.findall(val,val1)
-def find_substring(fuction,val,val1):
-    return fuction(val,val1)
+
+
 
 #################################################
 
@@ -76,8 +76,7 @@ def match_a_z(text :str) ->str:#its going to search  at the begnning of the stri
         ValueError
 
 
-string_in("a","gggd")
-    
+
 
 
 
