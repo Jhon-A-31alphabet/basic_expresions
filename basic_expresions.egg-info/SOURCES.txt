@@ -1,0 +1,7 @@
+setup.py
+basic_expresions/__init__.py
+basic_expresions/fuctions_expresions.py
+basic_expresions.egg-info/PKG-INFO
+basic_expresions.egg-info/SOURCES.txt
+basic_expresions.egg-info/dependency_links.txt
+basic_expresions.egg-info/top_level.txt

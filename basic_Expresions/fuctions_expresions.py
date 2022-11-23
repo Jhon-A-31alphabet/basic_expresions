@@ -6,8 +6,7 @@ def search_on_tex(a,word)->str:
     p=re.search(a,word)
     print(p)
 
-### those functions are equivalent as findall
-
+### this fuction is equivalent to findall
 def substring(val:str,val1:str)->str:
     return re.findall(val,val1)
 
@@ -64,6 +63,7 @@ def match_A_Z(text :str)->str: #its going to search  at the begnning of the stri
         p = re.compile("[A-Z]")
         r=p.match(text)
         return r
+        
     except:
         ValueError
 
