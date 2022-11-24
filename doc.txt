@@ -1,0 +1,82 @@
+basic_expresion library
+/-----------------------/
+
+How to use this library
+
+This library was made to work esier with regular
+expresions.These fuctions are based in re.Re is the module
+of python for regular expresions but this library has a lot of
+fuctions. My own library is minimalist and easier than re.
+
+
+
+search_on_tex(letter,string)
+
+This fuction is going to search the letter in the string.
+
+--------------------------------
+
+//search_on_tex("s","abcdefghijklmnopqrs")
+>> s : output
+
+-------------------------------------------------------------
+
+
+
+substring(letter,string)
+
+this fuction is equivalent to findall of re module(is the same thing)
+
+------------------------------------------------------------------
+
+combine(string,tuple)
+to combine a string with a tuple
+***********************************
+//combine("abc",["a","b","c"])
+
+>> [a,a],[a,b],[a,c],
+[b,a],[b,b],[b,c]
+[c,a],[c,b],[c,c]
+*********************************
+---------------------------------------------------------------------
+
+string_in(string,string)
+
+return a True if first string in the second string
+****************************************
+// string_in("daaad","abcdeftdaaad")
+>> True
+******************************************
+// string_in("abc","defg")
+>> None
+----------------------------------------------------------------------
+
+select_element_list(list)
+
+Return a random element of the list.
+****************************************
+//select_element_list(["a","b","c","d"])
+>> c or b or d etc.....
+****************************************
+
+-----------------------------------------------------------------------
+
+match_A_Z(string)
+
+This fuction is goig to search at the begining of the string but
+the regular expresion of this is [A-Z]
+*********************************************************************
+
+// match_A_Z("Zvafggggss")
+>> <re.Match object; span=(1,9), match='Z'>
+                                    *********
+
+------------------------------------------------------------------------
+match_a_z()
+
+Is like the last one but the regular expresion is [a-z]
+
+
+
+
+
