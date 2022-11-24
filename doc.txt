@@ -1,4 +1,9 @@
-basic_expresion library
+basic_expresions library
+
+
+
+
+import basic_expresions
 /-----------------------/
 
 How to use this library
@@ -42,7 +47,7 @@ to combine a string with a tuple
 
 string_in(string,string)
 
-return a True if first string in the second string
+return a True if first string is in the second string
 ****************************************
 // string_in("daaad","abcdeftdaaad")
 >> True

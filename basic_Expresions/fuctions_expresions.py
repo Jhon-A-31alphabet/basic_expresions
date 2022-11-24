@@ -67,7 +67,7 @@ def match_A_Z(text :str)->str: #its going to search  at the begnning of the stri
     except:
         ValueError
 
-def match_a_z(text :str) ->str:#its going to search  at the begnning of the string to.
+def match_a_z(text :str) ->str:#its going to search  at the beginning of the string to.
     try:
         p = re.compile("[a-z]")
         r=p.match(text)
